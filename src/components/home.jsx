@@ -3,7 +3,7 @@ function Home() {
     <section className="h-screen text-center my-0 mx-auto max-w-screen-sm">
       <img
         className="mx-auto"
-        src="../assets/img/shelfie-logo.png"
+        src="./img/shelfie-logo.png"
         alt="Shelfie Logo"
       />
       <h1 className="text-7xl text-teal-700 mb-6">Welcome to Shelfie</h1>
