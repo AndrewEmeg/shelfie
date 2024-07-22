@@ -35,7 +35,7 @@ function SignUp() {
           Email Address
           <input
             placeholder="example@gmail.com"
-            className="w-full rounded-lg p-4 block font-light text-2xl text-white border border-solid border-gray-400 text-gray-800"
+            className="w-full rounded-lg p-4 block font-light text-2xl border border-solid border-gray-400 text-gray-800"
             type="email"
             name=""
             id=""
@@ -49,7 +49,7 @@ function SignUp() {
           Password
           <input
             placeholder="Enter your password"
-            className="w-full rounded-lg p-4 block font-light text-2xl text-white border border-solid border-gray-400 text-gray-800"
+            className="w-full rounded-lg p-4 block font-light text-2xl border border-solid border-gray-400 text-gray-800"
             type="password"
             name=""
             id=""
@@ -63,7 +63,7 @@ function SignUp() {
           Confirm Password
           <input
             placeholder="Enter your password"
-            className="w-full rounded-lg p-4 block font-light text-2xl text-white border border-solid border-gray-400 text-gray-800"
+            className="w-full rounded-lg p-4 block font-light text-2xl border border-solid border-gray-400 text-gray-800"
             type="password"
             name=""
             id=""

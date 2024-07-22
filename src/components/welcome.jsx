@@ -39,7 +39,7 @@ function Welcome() {
         </Link>
         <Link
           to="/signIn"
-          className="max-w-full rounded-lg py-4 block font-medium text-2xl text-white border-2 border-solid border-teal-700 text-teal-800"
+          className="max-w-full rounded-lg py-4 block font-medium text-2xl border border-solid border-teal-700 text-teal-800"
         >
           Sign In
         </Link>
