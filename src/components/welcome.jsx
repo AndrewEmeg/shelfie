@@ -14,10 +14,10 @@ function Home() {
   return (
     <section
       style={{ height: "calc(var(--vh, 1vh) * 100)" }}
-      className="font-rubik overflow-hidden flex flex-col justify-around px-16 border-red-600 border-2  text-center my-0 mx-auto max-w-screen-sm"
+      className="font-rubik overflow-hidden flex flex-col justify-around px-16  text-center my-0 mx-auto max-w-screen-sm"
     >
       <img
-        className="w-3/5 block border-red-600 border-2 mx-auto"
+        className="w-3/5 block mx-auto"
         src="img/shelfie-logo.png"
         alt="Shelfie Logo"
       />
