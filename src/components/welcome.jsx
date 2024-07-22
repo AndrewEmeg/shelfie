@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <section className="overflow-hidden flex flex-col justify-around px-16 border-red-600 border-2 h-screen text-center my-0 mx-auto max-w-screen-sm">
+    <section className="overflow-hidden flex flex-col justify-around px-16 border-red-600 border-2 text-center my-0 mx-auto max-w-screen-sm">
       <img
         className="w-3/5 block border-red-600 border-2 mx-auto"
         src="img/shelfie-logo.png"
