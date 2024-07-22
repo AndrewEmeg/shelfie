@@ -1,7 +1,20 @@
+import { useEffect } from "react";
+
 function Home() {
+  useEffect(() => {
+    const handleResize = () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <section className="overflow-hidden flex flex-col justify-around px-16 border-red-600 border-2 text-center my-0 mx-auto max-w-screen-sm">
+    <section className="overflow-hidden flex flex-col justify-around px-16 border-red-600 border-2 h-screen text-center my-0 mx-auto max-w-screen-sm">
       <img
+        style={{ height: "calc(var(--vh, 1vh) * 100)" }}
         className="w-3/5 block border-red-600 border-2 mx-auto"
         src="img/shelfie-logo.png"
         alt="Shelfie Logo"
