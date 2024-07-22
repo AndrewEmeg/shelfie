@@ -1,6 +1,7 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-function Home() {
+function Welcome() {
   useEffect(() => {
     const handleResize = () => {
       let vh = window.innerHeight * 0.01;
@@ -30,20 +31,20 @@ function Home() {
         </p>
       </div>
       <div>
-        <a
-          href=""
+        <Link
+          to="/signUp"
           className="max-w-full rounded-lg mb-8 py-4 block font-medium text-2xl text-white bg-teal-700"
         >
           Sign Up
-        </a>
-        <a
-          href=""
-          className="max-w-full rounded-lg py-4 block font-medium text-2xl text-white bg-teal-700"
+        </Link>
+        <Link
+          to="/signIn"
+          className="max-w-full rounded-lg py-4 block font-medium text-2xl text-white border-2 border-solid border-teal-700 text-teal-800"
         >
           Sign In
-        </a>
+        </Link>
       </div>
     </section>
   );
 }
-export default Home;
+export default Welcome;
