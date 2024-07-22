@@ -7,7 +7,7 @@ export default {
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
       display: ["Oswald"],
-      rubik: ["JetBrains Mono"],
+      rubik: ["rubik", "JetBrains Mono"],
     },
     extend: {},
   },
