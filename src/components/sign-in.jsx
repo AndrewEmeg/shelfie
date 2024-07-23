@@ -6,11 +6,14 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const navigate = useNavigate();
+
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      console.log(auth);
       const user = auth.currentUser;
       console.log(user);
       console.log("Sign In successful");
