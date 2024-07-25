@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db } from "../config/firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 
 function SignUp() {
@@ -16,16 +19,18 @@ function SignUp() {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      const user = auth.currentUser;
-      console.log(user);
-      if (user) {
-        await setDoc(doc(db, "users", user.uid), {
-          firstName,
-          lastName,
-          email: user.email,
-        });
-      }
-      console.log("Account has been created");
+      onAuthStateChanged(auth, async (user) => {
+        if (user) {
+          console.log(user);
+          console.log("Account has been created");
+          await setDoc(doc(db, "users", user.uid), {
+            firstName,
+            lastName,
+            email: user.email,
+          });
+        }
+      });
+
       navigate("/home");
     } catch (error) {
       console.error(error);

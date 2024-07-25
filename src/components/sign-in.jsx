@@ -37,7 +37,7 @@ function SignIn() {
     <form
       action=""
       style={{ height: "calc(var(--vh, 1vh) * 100)" }}
-      className="font-rubik overflow-hidden flex flex-col justify-around px-16   my-0 mx-auto max-w-screen-sm border-2 "
+      className="font-rubik overflow-hidden flex flex-col justify-around px-16 my-0 mx-auto max-w-screen-sm border-2 "
     >
       <div>
         <h1 className="font-bold max-w-full text-7xl text-teal-700 mb-6">
